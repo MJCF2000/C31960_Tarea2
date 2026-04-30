@@ -21,7 +21,7 @@ def gaussxw(N):
 
     Notas
     -----
-    Los puntos de muestreo corresponden a las raíces del polinomio de Legendre de grado N, y los pesos están definidos para maximizar la precisión del método.
+    Los puntos de muestreo corresponden a las raíces del polinomio de Legendre de grado N, y los pesos están definidos para mejorar significativamente la precisión del método.
 
     Ejemplos
     --------
@@ -35,7 +35,7 @@ def gaussxw(N):
 #Escalado de Intervalo
 def gaussxwab(a, b, x, w):
     """
-    Escala los puntos de muestreo y pesos de la Cuadratura Gaussiana desde el intervalo [-1, 1] a un intervalo arbitrario [a, b].
+    Escala los puntos de muestreo y pesos de la Cuadratura Gaussiana para el nuevo invervalo [0,π].
 
     Parámetros
     ----------
@@ -51,9 +51,9 @@ def gaussxwab(a, b, x, w):
     Retorna
     -------
         xp (numpy.ndarray):
-            Puntos de muestreo transformados al intervalo [a, b].
+            Puntos de muestreo transformados al intervalo [0, π].
         wp (numpy.ndarray):
-            Pesos ajustados al intervalo [a, b].
+            Pesos ajustados al intervalo [0, π].
 
     Notas
     -----

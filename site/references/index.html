@@ -926,7 +926,7 @@ w (numpy.ndarray):
     Arreglo con los pesos asociados a cada punto de muestreo.
 </code></pre>
 <h4 id="cuadrature.cuadrature.gaussxw--notas">Notas</h4>
-<p>Los puntos de muestreo corresponden a las raíces del polinomio de Legendre de grado N, y los pesos están definidos para maximizar la precisión del método.</p>
+<p>Los puntos de muestreo corresponden a las raíces del polinomio de Legendre de grado N, y los pesos están definidos para mejorar significativamente la precisión del método.</p>
 <h4 id="cuadrature.cuadrature.gaussxw--ejemplos">Ejemplos</h4>
 <pre><code>&gt;&gt;&gt; valores = gaussxw(3)
 &gt;&gt;&gt; len(valores[0])
@@ -981,7 +981,7 @@ w (numpy.ndarray):
 
 <span class="sd">    Notas</span>
 <span class="sd">    -----</span>
-<span class="sd">    Los puntos de muestreo corresponden a las raíces del polinomio de Legendre de grado N, y los pesos están definidos para maximizar la precisión del método.</span>
+<span class="sd">    Los puntos de muestreo corresponden a las raíces del polinomio de Legendre de grado N, y los pesos están definidos para mejorar significativamente la precisión del método.</span>
 
 <span class="sd">    Ejemplos</span>
 <span class="sd">    --------</span>
@@ -1008,7 +1008,7 @@ w (numpy.ndarray):
 
     <div class="doc doc-contents ">
 
-        <p>Escala los puntos de muestreo y pesos de la Cuadratura Gaussiana desde el intervalo [-1, 1] a un intervalo arbitrario [a, b].</p>
+        <p>Escala los puntos de muestreo y pesos de la Cuadratura Gaussiana para el nuevo invervalo [0,π].</p>
 <h4 id="cuadrature.cuadrature.gaussxwab--parametros">Parámetros</h4>
 <pre><code>a (float): 
     Límite inferior del intervalo.
@@ -1021,9 +1021,9 @@ w (numpy.ndarray):
 </code></pre>
 <h4 id="cuadrature.cuadrature.gaussxwab--retorna">Retorna</h4>
 <pre><code>xp (numpy.ndarray):
-    Puntos de muestreo transformados al intervalo [a, b].
+    Puntos de muestreo transformados al intervalo [0, π].
 wp (numpy.ndarray):
-    Pesos ajustados al intervalo [a, b].
+    Pesos ajustados al intervalo [0, π].
 </code></pre>
 <h4 id="cuadrature.cuadrature.gaussxwab--notas">Notas</h4>
 <p>La transformación utilizada es:</p>
@@ -1082,7 +1082,7 @@ wp (numpy.ndarray):
 <span class="normal">74</span>
 <span class="normal">75</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">gaussxwab</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="n">w</span><span class="p">):</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">    Escala los puntos de muestreo y pesos de la Cuadratura Gaussiana desde el intervalo [-1, 1] a un intervalo arbitrario [a, b].</span>
+<span class="sd">    Escala los puntos de muestreo y pesos de la Cuadratura Gaussiana para el nuevo invervalo [0,π].</span>
 
 <span class="sd">    Parámetros</span>
 <span class="sd">    ----------</span>
@@ -1098,9 +1098,9 @@ wp (numpy.ndarray):
 <span class="sd">    Retorna</span>
 <span class="sd">    -------</span>
 <span class="sd">        xp (numpy.ndarray):</span>
-<span class="sd">            Puntos de muestreo transformados al intervalo [a, b].</span>
+<span class="sd">            Puntos de muestreo transformados al intervalo [0, π].</span>
 <span class="sd">        wp (numpy.ndarray):</span>
-<span class="sd">            Pesos ajustados al intervalo [a, b].</span>
+<span class="sd">            Pesos ajustados al intervalo [0, π].</span>
 
 <span class="sd">    Notas</span>
 <span class="sd">    -----</span>

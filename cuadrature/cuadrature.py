@@ -10,14 +10,14 @@ def gaussxw(N):
 
     Parámetros
     ----------
-    N(int) :
+    N(int):
         Número de puntos de integración.
 
     Retorna
     -------
-    x(numpy.ndarray) :
+    x(numpy.ndarray):
         Arreglo con los puntos de muestreo para la integración en [-1, 1].
-    w(numpy.ndarray) :
+    w(numpy.ndarray):
         Arreglo con los pesos asociados a cada punto de muestreo.
 
     Notas
@@ -43,20 +43,20 @@ def gaussxwab(a, b, x, w):
 
     Parámetros
     ----------
-    a(float) :
+    a(float):
         Límite inferior del intervalo.
-    b(float) :
+    b(float):
         Límite superior del intervalo.
-    x(numpy.ndarray) :
+    x(numpy.ndarray):
         Puntos de muestreo en el intervalo [-1, 1].
-    w(numpy.ndarray) :
+    w(numpy.ndarray):
         Pesos en el intervalo [-1, 1].
 
     Retorna
     -------
-    xp(numpy.ndarray) :
+    xp(numpy.ndarray):
         Puntos de muestreo transformados al intervalo [a, b].
-    wp(numpy.ndarray) :
+    wp(numpy.ndarray):
         Pesos ajustados al intervalo [a, b].
 
     Notas
@@ -85,12 +85,12 @@ def func(varInt):
 
     Parámetros
     ----------
-    varInt(float) :
+    varInt(float):
         Variable de integración.
 
     Retorna
     -------
-    float :
+    float:
         Valor de la función evaluada en varInt.
 
     Notas

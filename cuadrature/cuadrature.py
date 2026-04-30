@@ -5,26 +5,23 @@ import matplotlib.pyplot as plt
 #Gauss
 def gaussxw(N):
     """
-    Calcula los puntos de muestreo y pesos de la Cuadratura de Gauss-Legendre
-    en el intervalo [-1, 1].
+    Calcula los puntos de muestreo y pesos de la Cuadratura de Gauss-Legendre en el intervalo [-1, 1].
 
     Parámetros
     ----------
-    N (int):
-        Número de puntos de integración.
+        N (int):
+            Número de puntos de integración.
 
     Retorna
     -------
-    x (numpy.ndarray):
-        Arreglo con los puntos de muestreo para la integración en [-1, 1].
-    w (numpy.ndarray):
-        Arreglo con los pesos asociados a cada punto de muestreo.
+        x (numpy.ndarray):
+            Arreglo con los puntos de muestreo para la integración en [-1, 1].
+        w (numpy.ndarray):
+            Arreglo con los pesos asociados a cada punto de muestreo.
 
     Notas
     -----
-    Los puntos de muestreo corresponden a las raíces del polinomio de Legendre
-    de grado N, y los pesos están definidos para maximizar la
-    precisión del método.
+    Los puntos de muestreo corresponden a las raíces del polinomio de Legendre de grado N, y los pesos están definidos para maximizar la precisión del método.
 
     Ejemplos
     --------
@@ -38,26 +35,25 @@ def gaussxw(N):
 #Escalado de Intervalo
 def gaussxwab(a, b, x, w):
     """
-    Escala los puntos de muestreo y pesos de la Cuadratura Gaussiana desde
-    el intervalo [-1, 1] a un intervalo arbitrario [a, b].
+    Escala los puntos de muestreo y pesos de la Cuadratura Gaussiana desde el intervalo [-1, 1] a un intervalo arbitrario [a, b].
 
     Parámetros
     ----------
-    a (float): 
-        Límite inferior del intervalo.
-    b (float): 
-        Límite superior del intervalo.
-    x (numpy.ndarray): 
-        Puntos de muestreo en el intervalo [-1, 1].
-    w (numpy.ndarray): 
-        Pesos en el intervalo [-1, 1].
+        a (float): 
+            Límite inferior del intervalo.
+        b (float): 
+            Límite superior del intervalo.
+        x (numpy.ndarray): 
+            Puntos de muestreo en el intervalo [-1, 1].
+        w (numpy.ndarray): 
+            Pesos en el intervalo [-1, 1].
 
     Retorna
     -------
-    xp (numpy.ndarray):
-        Puntos de muestreo transformados al intervalo [a, b].
-    wp (numpy.ndarray):
-        Pesos ajustados al intervalo [a, b].
+        xp (numpy.ndarray):
+            Puntos de muestreo transformados al intervalo [a, b].
+        wp (numpy.ndarray):
+            Pesos ajustados al intervalo [a, b].
 
     Notas
     -----
@@ -85,13 +81,13 @@ def func(varInt):
 
     Parámetros
     ----------
-    varInt (float):
-        Variable de integración.
+        varInt (float):
+            Variable de integración.
 
     Retorna
     -------
-    float:
-        Valor de la función evaluada en varInt.
+        float:
+            Valor de la función evaluada en varInt.
 
     Notas
     -----
@@ -99,8 +95,7 @@ def func(varInt):
 
     f(x) = sin(x^2)
 
-    Esta función no tiene una solución analítica, por lo que se requiere un método numérico para
-    evaluar su integral.
+    Esta función no tiene una solución analítica, por lo que se requiere un método numérico para evaluar su integral.
 
     Ejemplos
     --------

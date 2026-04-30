@@ -3,7 +3,7 @@
 El archivo "cuadrature.py" se ejecuta de forma directa:
 
 ```bash
-python -m cuadrature.cuadrature
+python cuadrature.py
 
 ```
 Cuando se ejecuta el programa retorna los valores

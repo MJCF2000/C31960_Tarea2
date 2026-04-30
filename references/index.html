@@ -23,7 +23,7 @@
     
     
       
-        <title>Referencias - Tarea II</title>
+        <title>Referencias - Tarea II - Física Computacional - C31960</title>
       
     
     
@@ -82,7 +82,7 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href=".." title="Tarea II" class="md-header__button md-logo" aria-label="Tarea II" data-md-component="logo">
+    <a href=".." title="Tarea II - Física Computacional - C31960" class="md-header__button md-logo" aria-label="Tarea II - Física Computacional - C31960" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -96,7 +96,7 @@
       <div class="md-header__ellipsis">
         <div class="md-header__topic">
           <span class="md-ellipsis">
-            Tarea II
+            Tarea II - Física Computacional - C31960
           </span>
         </div>
         <div class="md-header__topic" data-md-component="header-topic">
@@ -180,13 +180,13 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href=".." title="Tarea II" class="md-nav__button md-logo" aria-label="Tarea II" data-md-component="logo">
+    <a href=".." title="Tarea II - Física Computacional - C31960" class="md-nav__button md-logo" aria-label="Tarea II - Física Computacional - C31960" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
 
     </a>
-    Tarea II
+    Tarea II - Física Computacional - C31960
   </label>
   
   <ul class="md-nav__list" data-md-scrollfix>
@@ -820,16 +820,17 @@
 
         <p>Función integrando del problema.</p>
 <h4 id="cuadrature.cuadrature.func--parametros">Parámetros</h4>
-<p>varInt (float):
-    Variable de integración.</p>
+<pre><code>varInt (float):
+    Variable de integración.
+</code></pre>
 <h4 id="cuadrature.cuadrature.func--retorna">Retorna</h4>
-<p>float:
-    Valor de la función evaluada en varInt.</p>
+<pre><code>float:
+    Valor de la función evaluada en varInt.
+</code></pre>
 <h4 id="cuadrature.cuadrature.func--notas">Notas</h4>
 <p>La función corresponde a:</p>
 <p>f(x) = sin(x^2)</p>
-<p>Esta función no tiene una solución analítica, por lo que se requiere un método numérico para
-evaluar su integral.</p>
+<p>Esta función no tiene una solución analítica, por lo que se requiere un método numérico para evaluar su integral.</p>
 <h4 id="cuadrature.cuadrature.func--ejemplos">Ejemplos</h4>
 <pre><code>&gt;&gt;&gt; import numpy as np
 &gt;&gt;&gt; func(np.pi)
@@ -839,7 +840,11 @@ np.sin(np.pi**2)
 
             <details class="mkdocstrings-source">
               <summary>Source code in <code>cuadrature\cuadrature.py</code></summary>
-              <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 82</span>
+              <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 78</span>
+<span class="normal"> 79</span>
+<span class="normal"> 80</span>
+<span class="normal"> 81</span>
+<span class="normal"> 82</span>
 <span class="normal"> 83</span>
 <span class="normal"> 84</span>
 <span class="normal"> 85</span>
@@ -863,24 +868,19 @@ np.sin(np.pi**2)
 <span class="normal">103</span>
 <span class="normal">104</span>
 <span class="normal">105</span>
-<span class="normal">106</span>
-<span class="normal">107</span>
-<span class="normal">108</span>
-<span class="normal">109</span>
-<span class="normal">110</span>
-<span class="normal">111</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">func</span><span class="p">(</span><span class="n">varInt</span><span class="p">):</span>
+<span class="normal">106</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">func</span><span class="p">(</span><span class="n">varInt</span><span class="p">):</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">    Función integrando del problema.</span>
 
 <span class="sd">    Parámetros</span>
 <span class="sd">    ----------</span>
-<span class="sd">    varInt (float):</span>
-<span class="sd">        Variable de integración.</span>
+<span class="sd">        varInt (float):</span>
+<span class="sd">            Variable de integración.</span>
 
 <span class="sd">    Retorna</span>
 <span class="sd">    -------</span>
-<span class="sd">    float:</span>
-<span class="sd">        Valor de la función evaluada en varInt.</span>
+<span class="sd">        float:</span>
+<span class="sd">            Valor de la función evaluada en varInt.</span>
 
 <span class="sd">    Notas</span>
 <span class="sd">    -----</span>
@@ -888,8 +888,7 @@ np.sin(np.pi**2)
 
 <span class="sd">    f(x) = sin(x^2)</span>
 
-<span class="sd">    Esta función no tiene una solución analítica, por lo que se requiere un método numérico para</span>
-<span class="sd">    evaluar su integral.</span>
+<span class="sd">    Esta función no tiene una solución analítica, por lo que se requiere un método numérico para evaluar su integral.</span>
 
 <span class="sd">    Ejemplos</span>
 <span class="sd">    --------</span>
@@ -915,20 +914,19 @@ np.sin(np.pi**2)
 
     <div class="doc doc-contents ">
 
-        <p>Calcula los puntos de muestreo y pesos de la Cuadratura de Gauss-Legendre
-en el intervalo [-1, 1].</p>
+        <p>Calcula los puntos de muestreo y pesos de la Cuadratura de Gauss-Legendre en el intervalo [-1, 1].</p>
 <h4 id="cuadrature.cuadrature.gaussxw--parametros">Parámetros</h4>
-<p>N (int):
-    Número de puntos de integración.</p>
+<pre><code>N (int):
+    Número de puntos de integración.
+</code></pre>
 <h4 id="cuadrature.cuadrature.gaussxw--retorna">Retorna</h4>
-<p>x (numpy.ndarray):
+<pre><code>x (numpy.ndarray):
     Arreglo con los puntos de muestreo para la integración en [-1, 1].
 w (numpy.ndarray):
-    Arreglo con los pesos asociados a cada punto de muestreo.</p>
+    Arreglo con los pesos asociados a cada punto de muestreo.
+</code></pre>
 <h4 id="cuadrature.cuadrature.gaussxw--notas">Notas</h4>
-<p>Los puntos de muestreo corresponden a las raíces del polinomio de Legendre
-de grado N, y los pesos están definidos para maximizar la
-precisión del método.</p>
+<p>Los puntos de muestreo corresponden a las raíces del polinomio de Legendre de grado N, y los pesos están definidos para maximizar la precisión del método.</p>
 <h4 id="cuadrature.cuadrature.gaussxw--ejemplos">Ejemplos</h4>
 <pre><code>&gt;&gt;&gt; valores = gaussxw(3)
 &gt;&gt;&gt; len(valores[0])
@@ -965,31 +963,25 @@ precisión del método.</p>
 <span class="normal">30</span>
 <span class="normal">31</span>
 <span class="normal">32</span>
-<span class="normal">33</span>
-<span class="normal">34</span>
-<span class="normal">35</span>
-<span class="normal">36</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">gaussxw</span><span class="p">(</span><span class="n">N</span><span class="p">):</span>
+<span class="normal">33</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">gaussxw</span><span class="p">(</span><span class="n">N</span><span class="p">):</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">    Calcula los puntos de muestreo y pesos de la Cuadratura de Gauss-Legendre</span>
-<span class="sd">    en el intervalo [-1, 1].</span>
+<span class="sd">    Calcula los puntos de muestreo y pesos de la Cuadratura de Gauss-Legendre en el intervalo [-1, 1].</span>
 
 <span class="sd">    Parámetros</span>
 <span class="sd">    ----------</span>
-<span class="sd">    N (int):</span>
-<span class="sd">        Número de puntos de integración.</span>
+<span class="sd">        N (int):</span>
+<span class="sd">            Número de puntos de integración.</span>
 
 <span class="sd">    Retorna</span>
 <span class="sd">    -------</span>
-<span class="sd">    x (numpy.ndarray):</span>
-<span class="sd">        Arreglo con los puntos de muestreo para la integración en [-1, 1].</span>
-<span class="sd">    w (numpy.ndarray):</span>
-<span class="sd">        Arreglo con los pesos asociados a cada punto de muestreo.</span>
+<span class="sd">        x (numpy.ndarray):</span>
+<span class="sd">            Arreglo con los puntos de muestreo para la integración en [-1, 1].</span>
+<span class="sd">        w (numpy.ndarray):</span>
+<span class="sd">            Arreglo con los pesos asociados a cada punto de muestreo.</span>
 
 <span class="sd">    Notas</span>
 <span class="sd">    -----</span>
-<span class="sd">    Los puntos de muestreo corresponden a las raíces del polinomio de Legendre</span>
-<span class="sd">    de grado N, y los pesos están definidos para maximizar la</span>
-<span class="sd">    precisión del método.</span>
+<span class="sd">    Los puntos de muestreo corresponden a las raíces del polinomio de Legendre de grado N, y los pesos están definidos para maximizar la precisión del método.</span>
 
 <span class="sd">    Ejemplos</span>
 <span class="sd">    --------</span>
@@ -1016,22 +1008,23 @@ precisión del método.</p>
 
     <div class="doc doc-contents ">
 
-        <p>Escala los puntos de muestreo y pesos de la Cuadratura Gaussiana desde
-el intervalo [-1, 1] a un intervalo arbitrario [a, b].</p>
+        <p>Escala los puntos de muestreo y pesos de la Cuadratura Gaussiana desde el intervalo [-1, 1] a un intervalo arbitrario [a, b].</p>
 <h4 id="cuadrature.cuadrature.gaussxwab--parametros">Parámetros</h4>
-<p>a (float): 
+<pre><code>a (float): 
     Límite inferior del intervalo.
 b (float): 
     Límite superior del intervalo.
 x (numpy.ndarray): 
     Puntos de muestreo en el intervalo [-1, 1].
 w (numpy.ndarray): 
-    Pesos en el intervalo [-1, 1].</p>
+    Pesos en el intervalo [-1, 1].
+</code></pre>
 <h4 id="cuadrature.cuadrature.gaussxwab--retorna">Retorna</h4>
-<p>xp (numpy.ndarray):
+<pre><code>xp (numpy.ndarray):
     Puntos de muestreo transformados al intervalo [a, b].
 wp (numpy.ndarray):
-    Pesos ajustados al intervalo [a, b].</p>
+    Pesos ajustados al intervalo [a, b].
+</code></pre>
 <h4 id="cuadrature.cuadrature.gaussxwab--notas">Notas</h4>
 <p>La transformación utilizada es:</p>
 <p>x' = (b - a)/2 * x + (b + a)/2</p>
@@ -1048,7 +1041,10 @@ wp (numpy.ndarray):
 
             <details class="mkdocstrings-source">
               <summary>Source code in <code>cuadrature\cuadrature.py</code></summary>
-              <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">39</span>
+              <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">36</span>
+<span class="normal">37</span>
+<span class="normal">38</span>
+<span class="normal">39</span>
 <span class="normal">40</span>
 <span class="normal">41</span>
 <span class="normal">42</span>
@@ -1084,32 +1080,27 @@ wp (numpy.ndarray):
 <span class="normal">72</span>
 <span class="normal">73</span>
 <span class="normal">74</span>
-<span class="normal">75</span>
-<span class="normal">76</span>
-<span class="normal">77</span>
-<span class="normal">78</span>
-<span class="normal">79</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">gaussxwab</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="n">w</span><span class="p">):</span>
+<span class="normal">75</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">gaussxwab</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="n">w</span><span class="p">):</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">    Escala los puntos de muestreo y pesos de la Cuadratura Gaussiana desde</span>
-<span class="sd">    el intervalo [-1, 1] a un intervalo arbitrario [a, b].</span>
+<span class="sd">    Escala los puntos de muestreo y pesos de la Cuadratura Gaussiana desde el intervalo [-1, 1] a un intervalo arbitrario [a, b].</span>
 
 <span class="sd">    Parámetros</span>
 <span class="sd">    ----------</span>
-<span class="sd">    a (float): </span>
-<span class="sd">        Límite inferior del intervalo.</span>
-<span class="sd">    b (float): </span>
-<span class="sd">        Límite superior del intervalo.</span>
-<span class="sd">    x (numpy.ndarray): </span>
-<span class="sd">        Puntos de muestreo en el intervalo [-1, 1].</span>
-<span class="sd">    w (numpy.ndarray): </span>
-<span class="sd">        Pesos en el intervalo [-1, 1].</span>
+<span class="sd">        a (float): </span>
+<span class="sd">            Límite inferior del intervalo.</span>
+<span class="sd">        b (float): </span>
+<span class="sd">            Límite superior del intervalo.</span>
+<span class="sd">        x (numpy.ndarray): </span>
+<span class="sd">            Puntos de muestreo en el intervalo [-1, 1].</span>
+<span class="sd">        w (numpy.ndarray): </span>
+<span class="sd">            Pesos en el intervalo [-1, 1].</span>
 
 <span class="sd">    Retorna</span>
 <span class="sd">    -------</span>
-<span class="sd">    xp (numpy.ndarray):</span>
-<span class="sd">        Puntos de muestreo transformados al intervalo [a, b].</span>
-<span class="sd">    wp (numpy.ndarray):</span>
-<span class="sd">        Pesos ajustados al intervalo [a, b].</span>
+<span class="sd">        xp (numpy.ndarray):</span>
+<span class="sd">            Puntos de muestreo transformados al intervalo [a, b].</span>
+<span class="sd">        wp (numpy.ndarray):</span>
+<span class="sd">            Pesos ajustados al intervalo [a, b].</span>
 
 <span class="sd">    Notas</span>
 <span class="sd">    -----</span>

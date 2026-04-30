@@ -1,14 +1,21 @@
 site_name: Tarea II
 site_description: Documentación del Método de Cuadratura Gaussiana por Polinomios de Legendre
 
-nav:
-  - index.md
-  - explanation.md
-  - tutorials.md
-  - reference.md
-
 theme:
   name: "material"
+
+nav:
+  - Inicio: index.md
+  - Explicación: explanation.md
+  - Tutoriales: tutorials.md
+  - Referencias: references.md
+
+plugins:
+  - search
+  - mkdocstrings:
+      handlers:
+        python:
+          paths: [.]
 
 markdown_extensions:
   - pymdownx.arithmatex:
@@ -17,10 +24,6 @@ markdown_extensions:
 extra_javascript:
   - javascripts/mathjax.js
   - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
 
-plugins:
-  - search
-  - mkdocstrings:
-      handlers:
-        python:
-          paths: [.]

@@ -10,14 +10,14 @@ def gaussxw(N):
 
     Parámetros
     ----------
-    N : int
+    N(int) :
         Número de puntos de integración.
 
     Retorna
     -------
-    x : numpy.ndarray
+    x(numpy.ndarray) :
         Arreglo con los puntos de muestreo para la integración en [-1, 1].
-    w : numpy.ndarray
+    w(numpy.ndarray) :
         Arreglo con los pesos asociados a cada punto de muestreo.
 
     Notas
@@ -28,9 +28,9 @@ def gaussxw(N):
 
     Ejemplos
     --------
-    >>> valores = gaussxw(3)
-    >>> len(valores[0])
-    3
+        >>> valores = gaussxw(3)
+        >>> len(valores[0])
+        3
     """
     x, w = np.polynomial.legendre.leggauss(N)
     return x, w
@@ -43,20 +43,20 @@ def gaussxwab(a, b, x, w):
 
     Parámetros
     ----------
-    a : float
+    a(float) :
         Límite inferior del intervalo.
-    b : float
+    b(float) :
         Límite superior del intervalo.
-    x : numpy.ndarray
+    x(numpy.ndarray) :
         Puntos de muestreo en el intervalo [-1, 1].
-    w : numpy.ndarray
+    w(numpy.ndarray) :
         Pesos en el intervalo [-1, 1].
 
     Retorna
     -------
-    xp : numpy.ndarray
+    xp(numpy.ndarray) :
         Puntos de muestreo transformados al intervalo [a, b].
-    wp : numpy.ndarray
+    wp(numpy.ndarray) :
         Pesos ajustados al intervalo [a, b].
 
     Notas
@@ -69,12 +69,12 @@ def gaussxwab(a, b, x, w):
 
     Ejemplos
     --------
-    >>> import numpy as np
-    >>> x = np.array([-0.5, 0.5])
-    >>> w = np.array([1.0, 1.0])
-    >>> escalado = gaussxwab(0, np.pi, x, w)
-    >>> escalado[0]
-    (2,)
+        >>> import numpy as np
+        >>> x = np.array([-0.5, 0.5])
+        >>> w = np.array([1.0, 1.0])
+        >>> escalado = gaussxwab(0, np.pi, x, w)
+        >>> escalado[0]
+        (2,)
     """
     return 0.5 * (b - a) * x + 0.5 * (b + a), 0.5 * (b - a) * w
 
@@ -85,12 +85,12 @@ def func(varInt):
 
     Parámetros
     ----------
-    varInt : float
+    varInt(float) :
         Variable de integración.
 
     Retorna
     -------
-    float
+    float :
         Valor de la función evaluada en varInt.
 
     Notas
@@ -104,9 +104,9 @@ def func(varInt):
 
     Ejemplos
     --------
-    >>> import numpy as np
-    >>> func(np.pi)
-    np.sin(np.pi**2)
+        >>> import numpy as np
+        >>> func(np.pi)
+        np.sin(np.pi**2)
     """
     return np.sin(varInt**2)
 

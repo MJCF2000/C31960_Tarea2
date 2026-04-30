@@ -2,9 +2,9 @@
 
 Este trabajo realiza el cálculo de la integral: 
 
-$
+$$
 I = \int_0^\pi \sin(x^2)dx
-$
+$$
 
 Esto lo consigue mediante la implementación del método de Cuadratura Gaussina con Polinomios de Legendre, por medio de "cuadrature.py".
 
